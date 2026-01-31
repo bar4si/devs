@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TaskMaster.Api/TaskMaster.Api.csproj" />
+    <Project Path="src/TaskMaster.Core/TaskMaster.Core.csproj" />
+    <Project Path="src/TaskMaster.Infrastructure/TaskMaster.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TaskMaster.UnitTests/TaskMaster.UnitTests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "mid-level/devs-ml-docker-compose-db"
+		},
+		{
+			"path": "mid-level/task-master-api"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/obj": true,
+			"**/bin": true,
+			"mid-level": true,"senior": true,"junior": true,
+			"task-master-api": true
+		},
+		"workbench.editorAssociations": {
+			"*.md": "vscode.markdown.preview.editor"
+		},
+		"markdown.preview.doubleClickToSwitchToEditor": true
+	}
+}

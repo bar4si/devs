@@ -1,0 +1,12 @@
+services:
+  sqlserver-db-init:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: devs-sql-init
+    depends_on:
+      - sqlserver
+    environment:
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD:-YourStrong@Password123}
+      - MSSQL_DB=${MSSQL_DB:-IndustrialDb}
+    volumes:
+      - ./scripts:/usr/config
+    entrypoint: /bin/bash /usr/config/import-data.sh
